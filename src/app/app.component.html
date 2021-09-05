@@ -1,0 +1,27 @@
+<div class="fillh">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="snav.toggle()" ><mat-icon>menu</mat-icon></button>
+      <h1 class="example-app-name">Responsive App</h1>
+      <form class="mlauto">
+        <mat-form-field>
+          <mat-label>Search</mat-label>
+          <input matInput type="search">
+        </mat-form-field>
+      </form>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="fillvh">
+      <mat-sidenav #snav mode="side">
+        <mat-nav-list (click)="snav.toggle()">
+          <a mat-list-item routerLink="/home">Home</a>
+          <a mat-list-item routerLink="/resume">Resume</a>
+          <a mat-list-item routerLink="/projects">Projects</a>
+          <a mat-list-item routerLink="/about">About</a>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

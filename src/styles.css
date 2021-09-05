@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow:hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* custom styles */
+
+mat-expansion-panel-header {
+    height: auto!important; 
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+}
+
+mat-expansion-panel {
+    margin: 10px!important;
+}
+
+.mat-expansion-panel-body {
+    padding-bottom: 5px!important;
+}
+
+.mauto {
+    margin:auto;
+}
+
+.mlauto {
+    margin-left:auto!important;
+}
+
+.mrauto {
+    margin-right:auto;
+}
+
+.mtauto {
+    margin-top:auto;
+}
+
+.mbauto {
+    margin-bottom:auto;
+}
+
+.wauto {
+    width: auto;
+}
+
+.whalf{
+    width: 50%;
+}
+
+.cyan {
+    background-color: cyan;
+}
+    
+.resume{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    max-width: 900px;
+    min-width: 450px;
+}
+
+.fill{
+    height: 100%;
+    width: 100%;
+}
+
+.fillh{
+    height: 100%;
+}
+
+.fillvh{
+    height: 100vh;
+    overflow: auto;
+}
+
+.posleft{
+    position: absolute;
+    left: 5px;
+}
+
+.posright{
+    position: absolute;
+    right: 5px;
+}
+
+.curpointer {
+    cursor: pointer;
+}
+
+.curpointer:hover{
+    color: blueviolet;
+    font-size: 105%;
+}
+
+.m1 .mat-button-base{
+    margin: 5px;
+}
+
+.m2 .mat-button-base{
+    margin: 10px;
+}
+
+.m1{
+    margin: 5px;
+}
+
+.m2{
+    margin: 10px;
+}
+

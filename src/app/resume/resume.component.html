@@ -1,0 +1,44 @@
+<div class="resume">
+    <mat-card>
+        <mat-card-content>
+            <mat-grid-list cols="2" rowHeight="20px">
+                <mat-grid-tile rowspan="2">
+                    <mat-card-title class="posleft">{{subject.name}}</mat-card-title>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a class="posright curpointer" (click)="openDialog()">
+                        {{subject.address.city}}, {{subject.address.province}}, {{subject.address.country}}
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <span class="posright">
+                        {{subject.address.phone}}
+                    </span>
+                </mat-grid-tile>
+                <mat-grid-tile rowspan="2">
+                    <mat-card-subtitle class="posleft">{{subject.title}}</mat-card-subtitle>
+                </mat-grid-tile>
+                <mat-grid-tile *ngFor="let link of subject.address.links">
+                        <a (click)="openLink(link.url)" class="posright curpointer">{{link.name}}</a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                        <a class="posright">{{subject.address.email}}</a>
+                </mat-grid-tile>
+            </mat-grid-list>
+            <mat-tab-group dynamicHeight>
+                <mat-tab label="Summary">
+                    <app-resume-summary></app-resume-summary>
+                </mat-tab>
+                <mat-tab label="Experience">
+                    <app-resume-experience></app-resume-experience>
+                </mat-tab>
+                <mat-tab label="Education">
+                    <app-resume-education></app-resume-education>
+                </mat-tab>
+                <mat-tab label="Skills">
+                    <app-resume-skills></app-resume-skills>
+                </mat-tab>
+              </mat-tab-group>
+        </mat-card-content>
+    </mat-card>
+</div>

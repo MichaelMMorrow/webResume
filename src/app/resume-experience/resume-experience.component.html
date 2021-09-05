@@ -1,0 +1,6 @@
+<div *ngFor="let workExp of subject.workExp">
+    <p class="mat-title m2">{{workExp.jobTitle}}</p>
+    <a (click)="openLink(workExp.url)" class="curpointer mat-subheading-2 m2">{{workExp.companyName}}</a>
+    <p class="m2">Date: {{workExp.startDate}} - {{workExp.endDate}}</p>
+    <p class="m2">{{workExp.summary}}</p>
+</div>

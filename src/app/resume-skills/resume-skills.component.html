@@ -1,0 +1,15 @@
+<div>
+    <div *ngIf="selectedSkill" class="m1">
+        <p class="mat-title m2">{{selectedSkill.title}}</p>
+        <p class="mat-subheading-2 m2">Experience: {{selectedSkill.timeExp}}</p>
+        <p class="m2">{{selectedSkill.detail}}</p>
+        <mat-list class="m2"><mat-divider></mat-divider></mat-list>
+    </div>
+    <div class="m1">
+        <button mat-raised-button 
+            *ngFor="let skill of subject.skills" 
+            (click)="skillDetail(skill)">
+            {{skill.title}}
+        </button>
+    </div>
+</div>

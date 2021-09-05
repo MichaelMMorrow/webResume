@@ -1,0 +1,17 @@
+<div>
+    <p class="mat-subheading-2 m2">{{subject.summary.headline}}</p>
+    <ul>
+        <li *ngFor="let point of subject.summary.points">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header >
+                    <mat-panel-title>
+                        {{point.summary}}
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>
+                    {{point.detail}}
+                </mat-panel-description>
+            </mat-expansion-panel>
+        </li>
+    </ul>
+</div>

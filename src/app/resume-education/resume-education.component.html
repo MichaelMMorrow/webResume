@@ -1,0 +1,5 @@
+<div *ngFor="let education of subject.education">
+    <p class="mat-title m2">{{education.certTitle}}</p>
+    <a (click)="openLink(education.url)" class="curpointer mat-subheading-2 m2">{{education.schoolName}}</a>
+    <p class="m2">Date: {{education.startDate}} - {{education.endDate}}</p>
+</div>
